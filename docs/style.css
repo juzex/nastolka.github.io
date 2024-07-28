@@ -27,15 +27,15 @@ body {
 }
 
 .check p { 
-    font-size: 35px;
+    font-size: 25px;
     color: black;
     font-weight: 400;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .check { 
-    margin: 20px 15px;
-    padding: 20px 25px;
-    
+    margin: 20px 5%;
     display: flex;
     border-radius: 40px;
     border: 1px solid black;
@@ -43,47 +43,42 @@ body {
     width: 100%;
     max-height: 3%;
     height: 100%;
-}
-
-.check p, .check button {
-    margin-top: auto;
-    margin-bottom: auto;
+    padding: 10px 15px;
 }
 
 .check button { 
     margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .cart { 
-    max-height: 70%;
+    font-size: 30px;
+    max-height: 60%;
     height: 100%;
     max-width: 90%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
     border: 1px solid black;
     border-radius: 50px;
 }
 
 .cart div { 
-    font-size: 50px;
     float: left;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 .cart button {
     display: block;
     color: black;
-    max-width: 70%;
+    max-width: 90%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    max-height: 6%;
+    max-height: 15%;
     height: 100%;
-    margin-top: 50;
     border: 1px solid;
     border-radius: 50px;
-    line-height: 2%;
 }
 
 .cart div div {
