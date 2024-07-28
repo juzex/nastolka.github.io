@@ -35,7 +35,7 @@ body {
 }
 
 .check { 
-    margin: 20px 5%;
+    margin: 15px 3%;
     display: flex;
     border-radius: 40px;
     border: 1px solid black;
@@ -54,7 +54,7 @@ body {
 
 .cart { 
     font-size: 30px;
-    max-height: 60%;
+    max-height: 65%;
     height: 100%;
     max-width: 80%;
     width: 100%;
@@ -71,15 +71,15 @@ body {
 .cart button {
     display: block;
     color: black;
-    max-width: 90%;
+    max-width: 85%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    max-height: 12%;
+    max-height: 10%;
     height: 100%;
     border: 1px solid;
     border-radius: 50px;
-    margin-top: 4%;
+    margin-top: 6%;
 }
 
 .cart div div {
