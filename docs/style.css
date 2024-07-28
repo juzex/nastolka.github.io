@@ -6,21 +6,16 @@ body {
     background-color: purple;
 }
 
-button {
-    z-index: 1;
-}
-
-img { 
-    z-index: 0;
-}
-
 .cart {
     background-color: rgb(129, 63, 167);
 }
 
 button {
-    border: none;
-    outline: none;
+    pointer-events: all;
+}
+
+img { 
+    pointer-events: none;
 }
 
 * {
@@ -58,6 +53,10 @@ body {
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.active { 
+    background-color: chartreuse;
 }
 
 .cart {
