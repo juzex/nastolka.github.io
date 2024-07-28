@@ -53,7 +53,7 @@ body {
 }
 
 .cart { 
-    font-size: 30px;
+    font-size: 40px;
     max-height: 65%;
     height: 100%;
     max-width: 80%;
@@ -79,9 +79,22 @@ body {
     height: 100%;
     border: 1px solid;
     border-radius: 50px;
-    margin-top: 6%;
+    margin-top: 8%;
 }
 
 .cart div div {
     display: inline;
+}
+
+.time form { 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    color: black;
+    font-size: 30px;
+}
+
+.time button { 
+    margin-left: auto;
+    margin-right: auto;
 }
