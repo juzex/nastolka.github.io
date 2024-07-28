@@ -53,7 +53,8 @@ body {
 }
 
 .cart { 
-    font-size: 40px;
+    font-size: 55px;
+    font-weight: 600;
     max-height: 65%;
     height: 100%;
     max-width: 80%;
@@ -86,15 +87,30 @@ body {
     display: inline;
 }
 
-.time form { 
+.time form label { 
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
     color: black;
-    font-size: 30px;
+    font-size: 20px;
 }
 
-.time button { 
+.time select { 
     margin-left: auto;
     margin-right: auto;
+}
+
+.time button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.countdown {
+    height: 5px;
+    max-width: 40%;
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
 }
