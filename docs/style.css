@@ -52,9 +52,7 @@ body {
     margin-bottom: auto;
 }
 
-.cart { 
-    font-size: 55px;
-    font-weight: 600;
+.cart {
     max-height: 65%;
     height: 100%;
     max-width: 80%;
@@ -76,28 +74,24 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    max-height: 10%;
+    max-height: 12%;
     height: 100%;
     border: 1px solid;
     border-radius: 50px;
-    margin-top: 8%;
+    margin-top: 6%;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .cart div div {
     display: inline;
 }
 
-.time form label { 
-    margin-left: auto;
-    margin-right: auto;
+.time form  { 
+    text-align: center;
     margin-top: 2%;
     color: black;
-    font-size: 20px;
-}
-
-.time select { 
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 15px;
 }
 
 .time button {
@@ -109,7 +103,7 @@ body {
     height: 5px;
     max-width: 40%;
     width: 100%;
-    position: relative;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
