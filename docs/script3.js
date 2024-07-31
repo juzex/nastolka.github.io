@@ -6,12 +6,6 @@ let words = ["ноготь", "свидание", "кал", "носок", "ско
     d = Math.round(Math.random()*(words.length - 1))
     e = Math.round(Math.random()*(words.length - 1))
     f = Math.round(Math.random()*(words.length - 1))
-    console.log(words[a]);
-    console.log(words[b]);
-    console.log(words[c]);
-    console.log(words[d]);
-    console.log(words[e]);
-    console.log(words[f]);
     document.getElementById('word1').innerText = words[a];
     document.getElementById('word2').innerText = words[b];
     document.getElementById('word3').innerText = words[c];
