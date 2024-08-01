@@ -13,18 +13,18 @@
             <button onclick="reset(this)"><img src="img/removecheck.png" height="25px"></button>
         </div>
         <div class="cart">
-            <button onclick="change1(this)"><div>1. <span id="word1"></span></div></button>
-            <button onclick="change2(this)"><div>2. <span id="word2"></span></div></button>
-            <button onclick="change3(this)"><div>3. <span id="word3"></span></div></button>
-            <button onclick="change4(this)"><div>4. <span id="word4"></span></div></button>
-            <button onclick="change5(this)"><div>5. <span id="word5"></span></div></button>
-            <button onclick="change6(this)"><div>6. <span id="word6"></span></div></button>
+            <button id="cartbtn1" onclick="change1(this)"><div>1. <span id="word1"></span></div></button>
+            <button id="cartbtn2" onclick="change2(this)"><div>2. <span id="word2"></span></div></button>
+            <button id="cartbtn3" onclick="change3(this)"><div>3. <span id="word3"></span></div></button>
+            <button id="cartbtn4" onclick="change4(this)"><div>4. <span id="word4"></span></div></button>
+            <button id="cartbtn5" onclick="change5(this)"><div>5. <span id="word5"></span></div></button>
+            <button id="cartbtn6" onclick="change6(this)"><div>6. <span id="word6"></span></div></button>
         </div>
         <div class="time">
             <form>
                 <label for="timer">Выбрать время:</label>
                 <br>
-                <select id="timer" name="timer">
+                <select id="timer" name="timer" onchange="valuechange(this)">
                   <option value="1">1 минута</option>
                   <option value="2">2 минуты</option>
                   <option value="3">3 минуты</option>
@@ -32,20 +32,16 @@
                   <option value="5">5 минут</option>
                 </select>
             </form>
-            <button id="startBtn"><img src="img/time.png" height="60px"></button>
-            <br>
-            <div class="countdown">
-                <progress id="countdown1" value="60" max="60"></progress>
-                <progress id="countdown2" value="120" max="120"></progress>
-                <progress id="countdown3" value="180" max="180"></progress>
-                <progress id="countdown4" value="240" max="240"></progress>
-                <progress id="countdown5" value="300" max="300"></progress>
+            <div style="position: relative;">
+                <div style="position: absolute; z-index: 1;" onclick="starttime(this)" id="starttimer">Start</div>
+                <div style="position: absolute; z-index: 2; visibility: hidden;" onclick="stoptime(this)" id="stoptimer">Stop</div>
+                <div style="position: absolute; z-index: 3; visibility: hidden;" onclick="resetgame(this)" id="resetcart">Reset</div>
             </div>
+            <div id="timerall"></div>
         </div>
     </div>
     <script src="script1.js"></script>
     <script src="script2.js"></script>
     <script src="script3.js"></script>
-    <script type="python" src="script.py"></script>
 </body>
 </html>
