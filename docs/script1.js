@@ -1,11 +1,39 @@
-var time = 5;
-    const timer1 = setInterval(() => { const countdownElement = document.getElementById('countdown1');
-        if(time >= 0) {countdownElement.value = time - 1;} 
-        else { 
-          clearInterval(timer1);
-          console.log('все');
-         }
-}, 1000);
+let seconds = 0;
+let minutes = 0;
+var selectedValue;
+var select;
+var interval = 1000;
 
-const button = document.getElementById('startBtn');
-button.addEventListener('click', timer1);
+
+function valuechange(identifier) {
+  select = document.querySelector('select');
+  selectedValue = select.value;
+}
+
+function starttime(identifier) {
+  minutes = selectedValue;
+  minutes = minutes - 1;
+  if (minutes == selectedValue - 1) {
+    seconds = 60;
+    seconds--;
+  } else if (seconds = 0 && minutes == selectedValue - 2) {
+    seconds = 60;
+    seconds--;
+  } else if (minutes == selectedValue - 3) {
+    seconds = 60;
+    seconds--;
+  } else if (minutes == selectedValue - 4) {
+    seconds = 60;
+    seconds--;
+  } else if (minutes == selectedValue - 5) {
+    seconds = 60;
+    seconds--;
+  } else {
+    document.getElementById('timerall').innerText = minutes + ":" + seconds;
+
+  }
+}
+
+setInterval(function starttime(identifier) {
+	console.log(seconds++);
+}, interval);
