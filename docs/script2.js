@@ -57,38 +57,28 @@ function change6(identifier) {
         document.getElementById('a').innerText = check;
 }}
 
+
+
+
 function reset() {
     check = 0;
     document.getElementById('a').innerText = check;
 }
-/*
-function change1(identifier) {
+
+
+
+
+function resetgame(identifier) {
     clicked1 = false;
-    identifier.style.background = color2;
-}
-
-function change2(identifier) {
     clicked2 = false;
-    identifier.style.background = color2;
-}
-
-function change3(identifier) {
     clicked3 = false;
-    identifier.style.background = color2;
-}
-
-function change4(identifier) {
     clicked4 = false;
-    identifier.style.background = color2;
-}
-
-function change5(identifier) {
     clicked5 = false;
-    identifier.style.background = color2;
-}
-
-function change6(identifier) {
     clicked6 = false;
-    identifier.style.background = color2;
+    document.getElementById('cartbtn1').style.background = color2;
+    document.getElementById('cartbtn2').style.background = color2;
+    document.getElementById('cartbtn3').style.background = color2;
+    document.getElementById('cartbtn4').style.background = color2;
+    document.getElementById('cartbtn5').style.background = color2;
+    document.getElementById('cartbtn6').style.background = color2;
 }
-*/
