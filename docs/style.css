@@ -44,7 +44,7 @@ body {
     border: 1px solid black;
     max-width: 50%;
     width: 100%;
-    max-height: 5%;
+    max-height: 4%;
     height: 100%;
     padding: 10px 15px ;
 }
@@ -83,11 +83,11 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    max-height: 12%;
+    max-height: 14%;
     height: 100%;
     border: 1px solid;
     border-radius: 50px;
-    margin-top: 6%;
+    margin-top: 4%;
 }
 
 .cart div div {
@@ -101,23 +101,20 @@ body {
     font-size: 15px;
 }
 
-#startBtn {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 select {
     margin-top: 1%;
 }
 
-.countdown {
-    height: 7px;
-    margin-left: auto;
-    margin-right: auto;
+.time div { 
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    pointer-events: all;
     margin-top: 1%;
-
 }
-
-#countdown2, #countdown3, #countdown4, #countdown5 {
-    opacity: 0;
+#timerall{ 
+    margin-top: 10%;
+    visibility: visible;
 }
