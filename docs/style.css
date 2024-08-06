@@ -4,6 +4,7 @@
 
 body { 
     background-color: purple;
+    max-width: 500px;
 }
 
 .cart {
@@ -60,7 +61,7 @@ body {
 }
 
 .cart {
-    max-height: 67%;
+    max-height: 66%;
     height: 100%;
     max-width: 80%;
     width: 100%;
@@ -114,7 +115,12 @@ select {
     pointer-events: all;
     margin-top: 1%;
 }
+
+.time div div { 
+    margin-top: 2%;
+}
+
 #timerall{ 
-    margin-top: 10%;
+    margin-top: 12%;
     font-weight: 400;
 }
