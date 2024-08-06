@@ -5,6 +5,7 @@
     <title>Настолка</title>
     <link rel="stylesheet" href="style.css">
     <link rel="sc" href="">
+    <meta content="width=device-width">
 </head>
 <body>
     <div>
@@ -33,15 +34,14 @@
                 </select>
             </form>
             <div style="position: relative;">
-                <div  onclick="starttime(this)" id="starttimer">Start</div>
-                <div  onclick="stoptime(this)" id="stoptimer">Stop</div>
-                <div  onclick="resetgame(this)" id="resetcart">Reset</div>
+                <div style="position: absolute; z-index: 1;" id="starttimer">Start</div>
+                <div style="position: absolute; z-index: 2;" id="stoptimer">Stop</div>
+                <div style="position: absolute; z-index: 3;" onclick="resetgame(this)" id="resetcart">Reset</div>
             </div>
-            <div id="timerall"></div>
+            <div id="timerall">0:00</div>
         </div>
     </div>
     <script src="script1.js"></script>
     <script src="script2.js"></script>
-    <script src="script3.js"></script>
 </body>
 </html>
