@@ -1,39 +1,52 @@
-let seconds = 0;
-let minutes = 0;
-var selectedValue;
-var select;
-var interval = 1000;
+let timer = document.getElementById('timerall');
+let startBtn = document.getElementById('starttimer');
+let stopBtn = document.getElementById('stoptimer');
+let resetBtn = document.getElementById('resetcart');
 
+let seconds = 0;
+let minutes = 1;
+let interval;
+
+timer.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+resetBtn.style.display = "none";
+stopBtn.style.display = "none";
+
+document.getElementById('stoptimer').hidden  = true;
 
 function valuechange(identifier) {
-  select = document.querySelector('select');
-  selectedValue = select.value;
+  minutes = document.getElementById("timer").value;
+  timer.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 }
 
-function starttime(identifier) {
-  minutes = selectedValue;
-  minutes = minutes - 1;
-  if (minutes == selectedValue - 1) {
-    seconds = 60;
-    seconds--;
-  } else if (seconds = 0 && minutes == selectedValue - 2) {
-    seconds = 60;
-    seconds--;
-  } else if (minutes == selectedValue - 3) {
-    seconds = 60;
-    seconds--;
-  } else if (minutes == selectedValue - 4) {
-    seconds = 60;
-    seconds--;
-  } else if (minutes == selectedValue - 5) {
-    seconds = 60;
-    seconds--;
-  } else {
-    document.getElementById('timerall').innerText = minutes + ":" + seconds;
 
+function updateTime() {
+  if (seconds <= 0) {
+    minutes--;
+    seconds = 59;
   }
+  seconds--;
+  if (minutes === 0 && seconds === 0) {
+    clearInterval(interval);
+    resetBtn.style.display = "inline";
+    startBtn.style.display = "none";
+    minutes = document.getElementById("timer").value;
+    stopBtn.style.display = "none";
+  }
+  timer.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 }
 
-setInterval(function starttime(identifier) {
-	console.log(seconds++);
-}, interval);
+startBtn.addEventListener('click', () => {
+  interval = setInterval(updateTime, 1000);
+  startBtn.style.display = "none";
+  stopBtn.style.display = "inline";
+});
+
+
+stopBtn.addEventListener('click', () => {
+  clearInterval(interval);
+  startBtn.style.display = "inline";
+  stopBtn.style.display = "none";
+});
+
+
