@@ -63,11 +63,6 @@ function change6(identifier) {
         document.getElementById('a').innerText = check;
 }}
 
-if (clicked1 == clicked2 == clicked3 == clicked4 == clicked5 == clicked6 == true) {
-    document.getElementById('stoptimer').style.display = "none";
-    document.getElementById('starttimer').style.display = "none";
-    document.getElementById('resetcart').style.display = "inline";
-}
 
 
 
