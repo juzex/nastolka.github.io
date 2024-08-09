@@ -23,7 +23,7 @@ function valuechange(identifier) {
 function updateTime() {
   if (seconds <= 0) {
     minutes--;
-    seconds = 5;
+    seconds = 59;
   }
   seconds--;
   if (minutes === 0 && seconds === 0) {
